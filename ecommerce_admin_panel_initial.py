@@ -21,3 +21,16 @@ def list_products():
     else:
         for pid, prod in products.items():
             print(f"ID: {pid} | Name: {prod['name']} | Price: {prod['price']}")
+
+
+def delete_product():
+    print("\n--- Delete Product ---")
+    try:
+        pid = int(input("Enter product ID to delete: "))
+        if pid in products:
+            del products[pid]
+            print("Product deleted.")
+        else:
+            print(" Product ID not found.")
+    except ValueError:
+        print("Invalid ID format.")
