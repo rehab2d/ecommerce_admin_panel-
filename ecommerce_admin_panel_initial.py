@@ -13,3 +13,11 @@ def add_product():
     products[next_id] = product
     print(f"Product '{name}' added with ID {next_id}")
     next_id += 1
+
+def list_products():
+    print("\n--- Product List ---")
+    if not products:
+        print("No products found.")
+    else:
+        for pid, prod in products.items():
+            print(f"ID: {pid} | Name: {prod['name']} | Price: {prod['price']}")
