@@ -20,7 +20,6 @@ def list_products():
     if not products:
         print("No products found.")
     else:
-         print(f"Total products: {len(products)}")#new
         for pid, prod in products.items():
             print(f"ID: {pid} | Name: {prod['name']} | Price: {prod['price']}")
 
