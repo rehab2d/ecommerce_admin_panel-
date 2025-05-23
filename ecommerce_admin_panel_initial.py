@@ -6,7 +6,12 @@ def add_product():
     global next_id
     print("\n--- Add Product ---")
     name = input("Enter product name: ")
-    price = float(input("Enter product price: "))
+ while True:
+    try:
+        price = float(input("Enter product price: "))
+        break
+    except ValueError:
+        print("Invalid input! Please enter a valid number for the price.")
     product = {
         "name": name,
         "price": price
