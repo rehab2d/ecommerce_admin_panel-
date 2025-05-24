@@ -1,4 +1,4 @@
-# 🛠️ Change Control test comment for SQA demonstration
+#  Change Control test comment for SQA demonstration
 products = {}  # Dictionary to store products
 next_id = 1  # ID counter
 
