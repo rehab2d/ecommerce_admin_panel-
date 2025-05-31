@@ -1,5 +1,6 @@
 #  Change Control test comment for SQA demonstration
 
+
 products = {}  # Dictionary to store products
 next_id = 1  # ID counter
 
@@ -9,6 +10,7 @@ def add_product():
     name = input("Enter product name: ")
     while True:
         try:
+            print("raghad")
             price = float(input("Enter product price: "))
             break
         except ValueError:
