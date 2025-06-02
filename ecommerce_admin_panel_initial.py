@@ -9,6 +9,7 @@ def add_product():
     name = input("Enter product name: ")
     while True:
         try:
+            print("sum")
             print("raghad")
             print("marwa")
             price = float(input("Enter product price: "))
