@@ -1,5 +1,5 @@
 #  Change Control test comment for SQA demonstration
-
+#  product = {}
 products = {}  # Dictionary to store products
 next_id = 1  # ID counter
 
